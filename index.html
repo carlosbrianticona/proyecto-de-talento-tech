@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Pixel Plaza | Juegos digitales</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="./index.html">Pixel<span>Plaza</span></a>
+      <nav class="header-nav" aria-label="Principal">
+        <ul>
+          <li><a href="./index.html" aria-current="page">Inicio</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li><button class="carrito" type="button">Carrito (<span id="contador">0</span>)</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="inicio">
+        <h1>Tu próximo juego, <em>en un minuto</em>.</h1>
+        <p class="parrafo">
+          Compramos y vendemos códigos digitales para PC y consola. Pagás, te
+          llega el código por mail y empezás a descargar. Sin envíos ni esperas.
+        </p>
+        <div class="acciones">
+          <a class="btn btn-primario" href="#catalogo">Ver catálogo</a>
+          <a class="btn btn-secundario" href="./pages/contacto.html">Consultar stock</a>
+        </div>
+      </section>
+
+      <section id="catalogo">
+        <h2>Más vendidos de la semana</h2>
+        <div class="grilla">
+          <article class="card">
+            <img src="./img/images.jpg" alt="Nave espacial frente a un planeta cian" />
+            <div class="card-cuerpo">
+              <p class="plataforma">PC · Aventura espacial</p>
+              <h3>Super Mario bros</h3>
+              <p class="descripcion">Explorá galaxias y disfruta de las aventuras.</p>
+              <p class="precio">$18.500</p>
+              <button class="btn" data-juego="Nebula Drift">Agregar al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./img/images 2.jpg" alt="Puerta de una cripta bajo una luna dorada" />
+            <div class="card-cuerpo">
+              <p class="plataforma">PS5 · Acción y rol</p>
+              <h3>Resident evil 5</h3>
+              <p class="descripcion">Sobrevivencia zombie y misiones dificiles.</p>
+              <p class="precio">$32.000</p>
+              <button class="btn" data-juego="Crypt of Ash">Agregar al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./img/images 3.jpg" alt="Granja pixelada con campos y una casa" />
+            <div class="card-cuerpo">
+              <p class="plataforma">Switch · Simulación</p>
+              <h3>GTA San Andreas</h3>
+              <p class="descripcion">Disfruta de una experiencia con el personaje</p>
+              <p class="precio">$12.900</p>
+              <button class="btn" data-juego="Tiny Harvest">Agregar al carrito</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./img/images 4.jpg" alt="Auto de carrera en una pista de neón" />
+            <div class="card-cuerpo">
+              <p class="plataforma">Xbox · Carreras</p>
+              <h3>Need For Speed</h3>
+              <p class="descripcion">Carreras para jugar de modo solitario o multijugador.</p>
+              <p class="precio">$21.000</p>
+              <button class="btn" data-juego="Kart Rift">Agregar al carrito</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Sitio realizado por Brian</p>
+      <nav aria-label="Redes">
+        <ul class="footer-list">
+          <li><img src="./img/whatsapp.png" alt="WhatsApp" /></li>
+          <li><img src="./img/social.png" alt="Discord" /></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

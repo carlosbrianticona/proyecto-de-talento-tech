@@ -1,0 +1,269 @@
+:root {
+  --fondo: #101a33;
+  --panel: #1a2750;
+  --panel-2: #243366;
+  --texto: #f1f4ff;
+  --suave: #aab4d8;
+  --rosa: #ff4fa3;
+  --cian: #3de0d0;
+  --sol: #ffd166;
+  --oscuro: #0a1126;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 62.5%; scroll-behavior: smooth; }
+
+body {
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.55;
+  background: var(--fondo);
+  color: var(--texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, .logo { font-family: "Chakra Petch", "DM Sans", sans-serif; }
+h1 { 
+  font-size: 4.8rem;
+  line-height: 1.05; 
+  font-weight: 700; 
+  letter-spacing: -0.02em; 
+  }
+h2 { 
+  font-size: 3.2rem; 
+  font-weight: 700;
+  margin-bottom: 2.4rem; 
+  }
+h3 { 
+  font-size: 2.1rem; 
+  font-weight: 600;
+  }
+
+
+/* ---------- Header ---------- */
+header {
+  background: var(--oscuro);
+  border-bottom: 4px solid var(--rosa);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.8rem 4rem;
+}
+.logo {
+  color: var(--texto);
+  text-decoration: none;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.logo span { color: var(--cian); }
+
+.header-nav ul { 
+  list-style: none; 
+  display: flex;
+  align-items: center;
+  gap: 0.6rem; }
+
+.header-nav a {
+  color: var(--suave);
+  text-decoration: none;
+  padding: 1rem 1.6rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+}
+
+.header-nav a:hover, .header-nav a[aria-current="page"] {
+  color: var(--texto); 
+  background: var(--panel); 
+}
+
+.carrito {
+  background: var(--sol);
+  color: var(--oscuro);
+  border: 0;
+  font: inherit;
+  font-weight: 700;
+  padding: 1rem 1.6rem;
+  border-radius: 0.6rem;
+  cursor: default;
+}
+
+/* ---------- Layout ---------- */
+main { 
+  flex: 1;
+  width: min(110rem, 92%); 
+  margin: 0 auto; 
+  padding-bottom: 6rem;
+ }
+
+/* ---------- Botones ---------- */
+.btn {
+  font: inherit;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0.6rem;
+  padding: 1.3rem 2.2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primario { 
+  background: var(--rosa);
+  color: var(--oscuro);
+}
+.btn-primario:hover { background: #ff72b6; }
+.btn-secundario { background: var(--cian); color: var(--oscuro); }
+.btn.agregado { background: var(--cian); }
+
+/* ---------- Inicio ---------- */
+.inicio {
+  padding: 9rem 0 7rem; 
+  display: grid; 
+  gap: 2.8rem; 
+  justify-items: start;
+}
+.inicio h1 em { 
+  font-style: normal;
+  color: var(--rosa);
+}
+.parrafo { 
+  max-width: 60ch;
+  font-size: 2rem; 
+  color: var(--suave);
+}
+.inicio .acciones { 
+  display: flex; 
+  gap: 1.2rem; 
+  flex-wrap: wrap;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr)); 
+  gap: 2.4rem;
+}
+.card {
+  background: var(--panel);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 100%; 
+  aspect-ratio: 3.3 / 3; 
+  object-fit: cover; 
+  display: block;
+}
+.card-cuerpo {
+  padding: 2rem; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.8rem; 
+  flex: 1; 
+}
+.plataforma { 
+  color: var(--cian); 
+  font-size: 1.4rem; 
+  font-weight: 600; 
+}
+.descripcion { 
+  color: var(--suave); 
+  font-size: 1.5rem; 
+  flex: 1; 
+}
+.precio { 
+  font-family: "Chakra Petch", sans-serif; 
+  font-size: 2.6rem; 
+  font-weight: 700; 
+  color: var(--sol); 
+  margin-top: 0.6rem; }
+.card .btn { 
+  width: 100%; 
+  text-align: center; 
+  background: var(--panel-2); 
+  color: var(--texto); 
+}
+.card .btn:hover { 
+  background: var(--rosa); 
+  color: var(--oscuro); 
+}
+.card .btn.agregado { 
+  background: var(--cian); 
+  color: var(--oscuro); 
+}
+
+
+/* ---------- Contacto ---------- */
+
+.contacto { 
+  padding-top: 6rem; 
+  display: grid; 
+  gap: 3rem; 
+  max-width: 60rem; 
+}
+.form-contacto { 
+  background: var(--panel); 
+  border-radius: 1.2rem; 
+  padding: 3.2rem; 
+  display: grid; 
+  gap: 2rem; 
+}
+.grupo-input { 
+  display: grid; 
+  gap: 0.8rem; 
+}
+.grupo-input label { 
+  font-weight: 600; 
+}
+.grupo-input input, .grupo-input select, .grupo-input textarea {
+  font: inherit;
+  color: var(--texto);
+  background: var(--oscuro);
+  border: 2px solid var(--panel-2);
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+  width: 100%;
+}
+.grupo-input textarea { 
+  min-height: 14rem; 
+  resize: vertical; 
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+  background: var(--oscuro);
+  border-top: 4px solid var(--cian);
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  color: var(--suave);
+  font-size: 1.5rem;
+}
+.footer-list {
+  list-style: none;
+  display: flex; 
+  gap: 1.2rem; 
+}
+.footer-list img { width: 4rem; 
+  height: 4rem; 
+  display: block; 
+}
+
+@media (max-width: 600px) {
+  header, footer { flex-direction: column; padding: 1.6rem 2rem; text-align: center; }
+  .inicio { padding: 5rem 0 4rem; }
+  .form-contacto { padding: 2rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+}
